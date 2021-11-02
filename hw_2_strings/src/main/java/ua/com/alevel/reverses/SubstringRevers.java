@@ -1,5 +1,4 @@
-package ua.com.alevel.Reverses;
-
+package ua.com.alevel.reverses;
 
 import ua.com.alevel.StringHelperUtil;
 import ua.com.alevel.Task;
@@ -7,26 +6,25 @@ import ua.com.alevel.Task;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class StringsRevers {
+public class SubstringRevers {
 
     public static void run(BufferedReader input) throws IOException {
         String again = "";
-        System.out.println("String Revers");
+        System.out.println("Substring Revers");
 
         do {
             System.out.print("Input your string: ");
             String str = input.readLine();
-            System.out.print("Input first string: ");
-            String first = input.readLine();
-            System.out.print("Input last string: ");
-            String last = input.readLine();
+            System.out.print("Input substring: ");
+            String substring = input.readLine();
 
-            str = StringHelperUtil.reverse(str, first, last);
+            str = StringHelperUtil.reverse(str, substring);
             System.out.println(str);
 
             System.out.println("Want to continue? (y/n)");
             again = input.readLine();
             System.out.println();
+
 
         } while (again.equalsIgnoreCase("y"));
 

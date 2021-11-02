@@ -1,4 +1,4 @@
-package ua.com.alevel.Reverses;
+package ua.com.alevel.reverses;
 
 import ua.com.alevel.StringHelperUtil;
 import ua.com.alevel.Task;
@@ -6,20 +6,20 @@ import ua.com.alevel.Task;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class SymbolRevers {
+public class Revers {
 
     public static void run(BufferedReader input) throws IOException {
         String again = "";
-        System.out.println("Revers Symbol");
+        System.out.println("Revers");
+
         do {
             System.out.print("Input your string: ");
             String str = input.readLine();
-            System.out.print("Enter first symbol: ");
-            String firstSymbol = input.readLine();
-            System.out.print("Enter last symbol: ");
-            String lastSymbol = input.readLine();
 
-            str = StringHelperUtil.reverse(str, firstSymbol.charAt(0), lastSymbol.charAt(0));
+            str = StringHelperUtil.reverse(str, true);
+            System.out.println(str);
+            str = StringHelperUtil.reverse(str, true);
+            str = StringHelperUtil.reverse(str, false);
             System.out.println(str);
 
             System.out.println("Want to continue? (y/n)");

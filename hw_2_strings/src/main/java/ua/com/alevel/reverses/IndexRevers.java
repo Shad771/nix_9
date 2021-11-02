@@ -1,5 +1,4 @@
-package ua.com.alevel.Reverses;
-
+package ua.com.alevel.reverses;
 
 import ua.com.alevel.StringHelperUtil;
 import ua.com.alevel.Task;

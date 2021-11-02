@@ -1,11 +1,10 @@
 package ua.com.alevel;
 
-import ua.com.alevel.Reverses.*;
+import ua.com.alevel.reverses.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 
 public class Task {
 
@@ -44,7 +43,6 @@ public class Task {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     static void helper() {
@@ -58,6 +56,4 @@ public class Task {
         System.out.println("0 - Exit");
         System.out.print("Task number ");
     }
-
-
 }
