@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class NORL{
+public class NORL {
     public void nORL() {
         System.out.println("Second task!");
 

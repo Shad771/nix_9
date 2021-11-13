@@ -5,10 +5,9 @@ import java.util.UUID;
 
 public final class DB {
 
-    private User[] users;
     private static DB instance;
-
     int size = 0;
+    private User[] users;
 
     private DB() {
         users = new User[size];
