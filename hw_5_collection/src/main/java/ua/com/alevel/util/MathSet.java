@@ -7,14 +7,6 @@ public class MathSet<T extends Number & Comparable<T>> {
     private int size = 0;
     private int capacity;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public MathSet() {
         capacity = 5;
         array = (T[]) new Number[capacity];
@@ -60,6 +52,14 @@ public class MathSet<T extends Number & Comparable<T>> {
                 }
             }
         }
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void add(T number) {

@@ -1,10 +1,10 @@
 package ua.com.alevel.controller;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 import ua.com.alevel.db.Storage;
 import ua.com.alevel.util.MathSet;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class RunController {
 
