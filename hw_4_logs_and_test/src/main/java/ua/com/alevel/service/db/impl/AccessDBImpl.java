@@ -7,8 +7,8 @@ import ua.com.alevel.service.util.GenerateAccessIdUtil;
 
 public class AccessDBImpl implements AccessDB {
 
-    private Access[] accesses;
     private static AccessDBImpl instance;
+    private Access[] accesses;
     private int nextAccessId = 0;
     private int capacity = 10;
 

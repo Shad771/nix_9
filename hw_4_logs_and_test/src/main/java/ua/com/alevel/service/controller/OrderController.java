@@ -63,8 +63,7 @@ public class OrderController {
             for (int i = 0; i < orders.length; i++) {
                 System.out.println((i + 1) + " " + orders[i]);
             }
-        }
-        else {
+        } else {
             LOGGER_INFO.info("Client's orders list is empty.");
             System.out.println("No orders yet created.");
         }

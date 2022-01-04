@@ -6,7 +6,8 @@ import java.util.UUID;
 
 public final class GenerateAccessIdUtil {
 
-    private GenerateAccessIdUtil() { }
+    private GenerateAccessIdUtil() {
+    }
 
     public static String generate(Access[] accesses, int nextAccessId) {
         String id = UUID.randomUUID().toString();

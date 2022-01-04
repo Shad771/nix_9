@@ -2,11 +2,11 @@ package ua.com.alevel.service.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ua.com.alevel.service.entity.Access;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-import ua.com.alevel.service.entity.Access;
 
 public class LogInController {
     private static final AccessServiceImpl accessService = new AccessServiceImpl();
@@ -103,15 +103,15 @@ public class LogInController {
             password = reader.readLine();
             access.setPassword(password);
             LOGGER_INFO.info("Checking if login is in use.");
-            if (login.equals(adminService.getAdmin().getAdminLogin()) && password.equals(adminService.getAdmin().getAdminPassword())) notVacantLogin = true;
+            if (login.equals(adminService.getAdmin().getAdminLogin()) && password.equals(adminService.getAdmin().getAdminPassword()))
+                notVacantLogin = true;
             for (int i = 0; i < accessService.sizeOf(); i++) {
                 if (accesses[i].getLogin().equals(login)) notVacantLogin = true;
             }
             if (notVacantLogin) {
                 LOGGER_WARN.warn("Login is already in use.");
                 System.out.println("Login is already in use.");
-            }
-            else if ((!login.isEmpty() && !login.isBlank()) && (!password.isEmpty() && !password.isBlank())) {
+            } else if ((!login.isEmpty() && !login.isBlank()) && (!password.isEmpty() && !password.isBlank())) {
                 access.setLogin(login);
                 access.setPassword(password);
                 accessService.create(access);

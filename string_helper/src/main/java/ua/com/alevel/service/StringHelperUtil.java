@@ -2,13 +2,14 @@ package ua.com.alevel.service;
 
 public class StringHelperUtil {
 
-    private StringHelperUtil() { }
+    private StringHelperUtil() {
+    }
 
     public static String reverse(String string, boolean full) {
         StringBuilder stringBuilder = new StringBuilder();
 
         if (full) {
-            for(int i = string.length()-1; i>=0; i--) {
+            for (int i = string.length() - 1; i >= 0; i--) {
                 stringBuilder.append(string.charAt(i));
             }
         } else {
@@ -28,7 +29,7 @@ public class StringHelperUtil {
     public static String reverse(String string, String substring) {
         StringBuilder stringBuilder = new StringBuilder();
         if (string.contains(substring)) {
-            stringBuilder.append(string.replaceAll(substring, reverse(substring,true)));
+            stringBuilder.append(string.replaceAll(substring, reverse(substring, true)));
         } else {
             System.out.println("No substring found");
         }

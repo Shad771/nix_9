@@ -2,21 +2,20 @@ package ua.com.alevel.service.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ua.com.alevel.service.entity.Admin;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import ua.com.alevel.service.entity.Admin;
-
 public class FirstRunController {
-
-    private FirstRunController() { }
 
     private static final AdminServiceImpl adminService = new AdminServiceImpl();
     private static final Logger LOGGER_INFO = LoggerFactory.getLogger("info");
     private static final Logger LOGGER_WARN = LoggerFactory.getLogger("warn");
     private static final Logger LOGGER_ERROR = LoggerFactory.getLogger("error");
+    private FirstRunController() {
+    }
 
     public static void run() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

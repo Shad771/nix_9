@@ -5,8 +5,8 @@ import ua.com.alevel.service.entity.Client;
 
 public class ClientDBImpl implements ClientDB {
 
-    private Client[] clients;
     private static ClientDBImpl instance;
+    private Client[] clients;
     private int nextClientId = 0;
     private int capacity = 10;
 

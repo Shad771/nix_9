@@ -5,8 +5,8 @@ import ua.com.alevel.service.entity.Admin;
 
 public class AdminDBImpl implements AdminDB {
 
-    private final Admin admin = new Admin();
     private static AdminDBImpl instance;
+    private final Admin admin = new Admin();
 
     public static AdminDBImpl getInstance() {
         if (instance == null) {

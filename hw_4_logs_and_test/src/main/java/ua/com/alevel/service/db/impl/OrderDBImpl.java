@@ -6,8 +6,8 @@ import ua.com.alevel.service.util.GenerateOrderIDUtil;
 
 public class OrderDBImpl implements OrderDB {
 
-    private Order[] orders;
     private static OrderDBImpl instance;
+    private Order[] orders;
     private int nextOrderId = 0;
     private int capacity = 10;
 

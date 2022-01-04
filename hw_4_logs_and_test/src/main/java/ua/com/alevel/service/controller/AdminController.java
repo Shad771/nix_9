@@ -2,14 +2,13 @@ package ua.com.alevel.service.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ua.com.alevel.service.entity.Access;
+import ua.com.alevel.service.entity.Client;
+import ua.com.alevel.service.entity.Order;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-import ua.com.alevel.service.entity.Access;
-import ua.com.alevel.service.entity.Client;
-import ua.com.alevel.service.entity.Order;
 
 public class AdminController {
 
